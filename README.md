@@ -1,8 +1,16 @@
-# chicken-scratch-recognition
-
-Training a model that can recognize my beautiful handwriting.
+# Handwritten Words Recognition
 
 
+With help from  [Aakash Nain and Sayak Paul's keras example](https://keras.io/examples/vision/handwriting_recognition/), I have built a prototype streamlit app that can recognize handwritten words. 
+
+Here are some examples of the results of the model.
+
+<img src = media/results_50.PNG>
+
+
+This project revolves around a state-of-the-art CRNN model with CTC loss, designed to excel in complex sequence-to-sequence tasks like handwritten word recognition and speech recognition. To showcase its potential, I've built a prototype Streamlit app. This marks the beginning of an ongoing project, with continuous improvements and enhancements on the horizon.
+
+The importance of Optical Character Recognition (OCR) cannot be overstated. It digitizes text, revolutionizing data entry and enhancing accessibility. OCR is at the forefront of AI and machine learning, transforming how we interact with textual information.
 
 
 ### Software Requirements:
@@ -51,7 +59,11 @@ Here is what the app should look like:
         - Solely used for time intensive model training. 
     - [true_inference.ipynb](code/true_inference.ipynb)
         - Used to create modular functions for eventual use in streamlit app    
-- Data folder (not in repo)
+- Data folder 
+    - IAM_Words
+        -  words.txt - pseudo data dictionary - explanation below under 'Data Description'
+        -  words (not in repo. must be downloaded)
+            - a01 - r06 (not in repo. must be downloaded)
     - Further explanation down below under 'Data Description'
         
 - Media folder
@@ -91,11 +103,28 @@ data/IAM_Words/words.text - is a pseudo data dictionary. The following is a data
     - grammatical_tag - the grammatical tag for this word
     - word -  the transcription for this word
 
+### Model Performance
+
+Here's a plot of the loss (measured by edit distance):
+
+<img src = media/loss_plot.PNG>
 
 ### Contributor:
     
 **Kalyan Lakshmanan** 
     - [Github](https://github.com/kalymaan) 
     - [LinkedIn](https://www.linkedin.com/in/kalyanlakshmanan/) 
+    
+    
+### Special Thanks:
 
+**Aakash Nain** 
+    - [Github](https://github.com/AakashKumarNain) 
+    - [Website](https://aakashkumarnain.github.io/)    
+**Sayak Paul** 
+    - [Github](https://github.com/sayakpaul) 
+    - [Website](https://sayak.dev/) 
+    
+- To my advisors: Musfiqur Rahman, Sonyah Seiden, and Eric Bayless
+- To the rest of my General Assembly cohort
 
